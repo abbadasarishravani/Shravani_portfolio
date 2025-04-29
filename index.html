@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ABBADASARI SHRAVANI</h1>
+        <p>Turning Ideas Into Reality Through Code</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">🌙</div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="C:\Users\Abbad\Downloads\profile.jpg" alt="Profile Picture">
+        <p>Hi, I'm Shravani, a third-year B.Tech student in Computer Science and Engineering at BVRIT Narsapur. I am deeply passionate about coding and love solving problems through efficient and elegant solutions. With a strong interest in software development and data structures & algorithms (DSA), I continuously strive to improve my skills and build impactful projects.</p><br>
+        <p> I enjoy exploring new technologies, participating in coding challenges, and working on real-world applications that make a difference. My goal is to become a skilled software engineer, constantly learning and growing in the field of technology.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="https://feedtheneed.org/wp-content/uploads/2017/09/Feed-the-Need-logo-MAIN.png" alt="Project 1">
+                <h3>Tackling Food Wastage and Hunger: Feed the Needy</h3>
+                <p>The “Feed the Needy” application redistributes surplus food from events like weddings and corporate gatherings to orphanages and old age homes, reducing food wastage while addressing hunger. Users provide donation details, which are verified by an NGO. The NGO then manages pickup and delivery, creating a seamless and reliable system to connect donors with those in need.</p>
+            </div>
+            <div class="project">
+                <img src="https://th.bing.com/th/id/OIP.d7xCg1qh5-f4n6CAjtnI0AAAAA?rs=1&pid=ImgDetMain" alt="Project 2">
+                <h3>Number Finding Game</h3>
+                <p>This project, built using Java Swing, guides users through a step-by-step process where they think of a number and perform mental calculations. Using mathematical logic, the program accurately predicts the final result, providing an interactive and engaging user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">abbadasarishravani@gmail.com</a></p>
+        <p>Connect with me:</p>
+            <ol><a href="https://github.com/abbadasarishravani" target="_blank">GitHub</a></ol>
+            <ol><a href="https://www.linkedin.com/in/shravani-abbadasari-371a28278" target="_blank">LinkedIn</a></ol>
+       
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shravani. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Make sections appear smoothly on scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.classList.add("show");
+            });
+        });
+    </script>
+</body>
+</html>
